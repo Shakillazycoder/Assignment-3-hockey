@@ -11,8 +11,6 @@
     <!-- daisyUI 4.6.0 CSS file + Tailwind CSS CDN script  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- bootstrap script -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome Kit - just one line of javascript. -->
     <script src="https://kit.fontawesome.com/9eb043a0c4.js" crossorigin="anonymous"></script>
     <!-- tailwind customized script -->
@@ -37,9 +35,9 @@
 
 </head>
 <body class="font-manrope">
-    <Header class="container mx-auto px-4">
+    <Header class="container mx-auto px-3">
         <!-- navbar section -->
-     <nav>
+     <nav class="py-14">
         <div class="navbar flex justify-between items-center">
             <div class="">
               <div class="dropdown">
@@ -81,6 +79,29 @@
             </div>
           </div>
      </nav>
+     <!-- banner section -->
+     <div class="carousel w-full relative">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+          </div>   
+          <div class="space-y-4 border-4 border-black bg-black rounded-2xl p-8 max-w-[400px] md:max-w-[750px] md:mr-2 lg:max-w-[550px] absolute xl:-mt-52 xl:ml-[650px] lg:-mt-52 lg:ml-[400px]">
+            <h2 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h2>
+            <p class="text-[#FFFFFF99] text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
     </Header>
     <main>
 
